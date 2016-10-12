@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html ng-csp ng-app="LazyPanda.UI">
+<head>
+    <title>#??</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="lib/hammer.min.js"></script>
+    <script src="lib/jquery-2.2.4.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular.hammer.min.js"></script>
+    <script src="lib/angular-animate.min.js"></script>
+    <script src="lib/angular-aria.min.js"></script>
+    <script src="lib/angular-resource.min.js"></script>
+    <script src="lib/underscore-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,600,700' rel='stylesheet' type='text/css'>
+    <link href="dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="dist/css/app.min.css" rel="stylesheet" />
+    <script src="dist/js/configs/app.js"></script>
+</head>
+<body class="{{main.activeColorMode.colorId}}" ng-controller="MainController as main" ng-cloak ng-class="{'colorPickerActive': main.showColorPicker}">
+    <div class="color-switcher">
+        <div class="theme-switcher accent-picker">
+            <label class="settings-label">Pick Accent</label>
+            <div class="accent-picker-close" ng-click="main.closeColorPicker()"></div>
+            <div class="settings-color-picker" ng-show="main.settingsPaneColorsInitalized">
+                <div class="color-originator"></div>
+                <div class="color-plate" ng-repeat="color in main.shownColorModes" ng-style="{
+                'background-color':color.code,
+                'z-index': main.shownColorModes.length - $index,
+                'transition':color.transition}" ng-attr-id="color_{{color.colorId}}"
+                     ng-click="main.choseColor(color)"></div>
+            </div>
+        </div>
+    </div>
+    <div class="header" ng-mouseleave="main.bannerleave($event)">
+        <div class="header-xs">
+            <div class="header-xs-profile-links">
+                <ul class="header-xs-profile-links-pages-list">
+                    <li class="pull-left">
+                        <a target="_blank" href="http://github.com/asitparida">
+                            <svg width="30px" height="47px" viewBox="0 0 48 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Github</title>
+                                <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Black" transform="translate(-700.000000, -560.000000)" fill="#000000">
+                                        <path d="M723.9985,560 C710.746,560 700,570.787092 700,584.096644 C700,594.740671 706.876,603.77183 716.4145,606.958412 C717.6145,607.179786 718.0525,606.435849 718.0525,605.797328 C718.0525,605.225068 718.0315,603.710086 718.0195,601.699648 C711.343,603.155898 709.9345,598.469394 709.9345,598.469394 C708.844,595.686405 707.2705,594.94548 707.2705,594.94548 C705.091,593.450075 707.4355,593.480194 707.4355,593.480194 C709.843,593.650366 711.1105,595.963499 711.1105,595.963499 C713.2525,599.645538 716.728,598.58234 718.096,597.964902 C718.3135,596.407754 718.9345,595.346062 719.62,594.743683 C714.2905,594.135281 708.688,592.069123 708.688,582.836167 C708.688,580.205279 709.6225,578.054788 711.1585,576.369634 C710.911,575.759726 710.0875,573.311058 711.3925,569.993458 C711.3925,569.993458 713.4085,569.345902 717.9925,572.46321 C719.908,571.928599 721.96,571.662047 724.0015,571.651505 C726.04,571.662047 728.0935,571.928599 730.0105,572.46321 C734.5915,569.345902 736.603,569.993458 736.603,569.993458 C737.9125,573.311058 737.089,575.759726 736.8415,576.369634 C738.3805,578.054788 739.309,580.205279 739.309,582.836167 C739.309,592.091712 733.6975,594.129257 728.3515,594.725612 C729.2125,595.469549 729.9805,596.939353 729.9805,599.18773 C729.9805,602.408949 729.9505,605.006706 729.9505,605.797328 C729.9505,606.441873 730.3825,607.191834 731.6005,606.9554 C741.13,603.762794 748,594.737659 748,584.096644 C748,570.787092 737.254,560 723.9985,560" id="Github"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="pull-right" style="margin-right:15px;"><div class="header-xs-profile-links-pages-list-toggle" ng-click="main.openColorPicker()"></div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-profile-data">
+            <div class="header-profile-links-pages-list-toggle pull-right" ng-click="main.openColorPicker()"></div>
+            <div class="header-profile-links pull-right">
+                <ul class="header-profile-links-pages-list">
+                    <li>
+                        <a target="_blank" href="http://github.com/asitparida">
+                            <svg width="48px" height="47px" viewBox="0 0 48 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Github</title>
+                                <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Black" transform="translate(-700.000000, -560.000000)" fill="#000000">
+                                        <path d="M723.9985,560 C710.746,560 700,570.787092 700,584.096644 C700,594.740671 706.876,603.77183 716.4145,606.958412 C717.6145,607.179786 718.0525,606.435849 718.0525,605.797328 C718.0525,605.225068 718.0315,603.710086 718.0195,601.699648 C711.343,603.155898 709.9345,598.469394 709.9345,598.469394 C708.844,595.686405 707.2705,594.94548 707.2705,594.94548 C705.091,593.450075 707.4355,593.480194 707.4355,593.480194 C709.843,593.650366 711.1105,595.963499 711.1105,595.963499 C713.2525,599.645538 716.728,598.58234 718.096,597.964902 C718.3135,596.407754 718.9345,595.346062 719.62,594.743683 C714.2905,594.135281 708.688,592.069123 708.688,582.836167 C708.688,580.205279 709.6225,578.054788 711.1585,576.369634 C710.911,575.759726 710.0875,573.311058 711.3925,569.993458 C711.3925,569.993458 713.4085,569.345902 717.9925,572.46321 C719.908,571.928599 721.96,571.662047 724.0015,571.651505 C726.04,571.662047 728.0935,571.928599 730.0105,572.46321 C734.5915,569.345902 736.603,569.993458 736.603,569.993458 C737.9125,573.311058 737.089,575.759726 736.8415,576.369634 C738.3805,578.054788 739.309,580.205279 739.309,582.836167 C739.309,592.091712 733.6975,594.129257 728.3515,594.725612 C729.2125,595.469549 729.9805,596.939353 729.9805,599.18773 C729.9805,602.408949 729.9505,605.006706 729.9505,605.797328 C729.9505,606.441873 730.3825,607.191834 731.6005,606.9554 C741.13,603.762794 748,594.737659 748,584.096644 C748,570.787092 737.254,560 723.9985,560" id="Github"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="portfolioContent">
+        <svg id="panda" data-name="??" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 647.97 917.95">
+            <title>plain_panda</title>
+            <rect id="panda-bgrect" class="cls-1" width="647.97" height="917.95" />
+            <circle id="panda-pictrect" class="cls-2" cx="331.48" cy="316.86" r="220.65" />
+            <path d="M444.4,531.64a220.65,220.65,0,0,1-312,.82l.67.66c19.69-93.29,81.61-161.4,154.94-161.4s135.26,68.11,154.94,161.4Z" transform="translate(39 19.39)" />
+            <circle class="cls-3" cx="212.73" cy="231.16" r="30" />
+            <circle class="cls-3" cx="446.13" cy="231.16" r="30" />
+            <circle class="cls-4" cx="218.07" cy="237.32" r="17.26" />
+            <circle class="cls-4" cx="442.43" cy="235.68" r="17.26" />
+            <circle class="cls-5" cx="336.41" cy="331.83" r="139.71" />
+            <path d="M281.51,270.65c7.1,8.77-12,13.46-27.46,26s-33.83,15.62-40.93,6.84-.3-26.06,15.2-38.61S274.41,261.87,281.51,270.65Z" transform="translate(39 19.39)" />
+            <circle class="cls-6" cx="282.78" cy="298.14" r="11.71" />
+            <circle cx="282.37" cy="298.14" r="3.9" />
+            <path d="M302,270.65c-7.1,8.77,12,13.46,27.46,26s33.83,15.62,40.93,6.84.3-26.06-15.2-38.61S309.14,261.87,302,270.65Z" transform="translate(39 19.39)" />
+            <circle class="cls-6" cx="378.77" cy="298.14" r="11.71" />
+            <circle cx="379.18" cy="298.14" r="3.9" />
+            <path d="M296.5,381.38c17.63-1.93,31.56-18,32.64-38v-.27l-72.08-.45" transform="translate(39 19.39)" />
+            <polyline id="panda-lip-right" class="cls-7" points="356.8 422.28 330.15 422.05 343.21 422.16" />
+            <path id="panda-lip-left" class="cls-7" d="M268.9,402.71l24.33,0Z" transform="translate(39 19.39)" />
+            <path d="M296.89,381.4v18.12h-7.25V381.64l-.42-.27c-18.29-2.08-32.57-19.41-32.57-40.48,0-5.33,15.64-9.64,35-9.64,20.74,0,37.52,5.31,37.52,11.87" transform="translate(39 19.39)" />
+        </svg>
+        <button class="panda-action left" ng-click="main.makePandaHappy()">#happy</button>
+        <button class="panda-action right" ng-click="main.makePandaSad()">#sad</button>
+    </div>
+</body>
+</html>
