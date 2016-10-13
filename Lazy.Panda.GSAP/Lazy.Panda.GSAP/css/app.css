@@ -1180,6 +1180,11 @@ body {
       background: transparent;
       transition: background 0.3s linear;
       color: #fff; }
+      @media only screen and (max-width: 768px) {
+        body .content .panda-action {
+          height: 180px;
+          line-height: 180px;
+          font-size: medium; } }
       body .content .panda-action.left {
         left: 0; }
       body .content .panda-action.mid {
@@ -1194,7 +1199,9 @@ body {
       margin: 0 auto; }
       @media only screen and (max-width: 768px) {
         body .content #panda {
-          width: 100%; } }
+          width: 100%;
+          position: relative;
+          top: -45px; } }
       body .content #panda-pictrect {
         stroke-miterlimit: 10;
         stroke-width: 5px;

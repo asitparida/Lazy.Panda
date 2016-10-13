@@ -452,6 +452,12 @@ body {
             transition: background 0.3s linear;
             color: #fff;
 
+            @include respond-to-mobile {
+                height: 180px;
+                line-height: 180px;
+                font-size: medium;
+            }
+
             &.left {
                 left: 0;
             }
@@ -477,6 +483,8 @@ body {
 
             @include respond-to-mobile {
                 width: 100%;
+                position: relative;
+                top: -45px;
             }
 
             &-pictrect {
