@@ -441,7 +441,7 @@ body {
             height: 120px;
             line-height: 120px;
             padding: 0;
-            width: 33%;
+            width: 33.33%;
             text-align: center;
             font-weight: 100;
             font-size: xx-large;
@@ -451,6 +451,8 @@ body {
             background: transparent;
             transition: background 0.3s linear;
             color: #fff;
+            background: rgba(0,0,0,0.33);
+            box-sizing: border-box;
 
             @include respond-to-mobile {
                 height: 180px;
@@ -460,10 +462,12 @@ body {
 
             &.left {
                 left: 0;
+                border-right: 2px solid rgba(0,0,0,0.50);
             }
 
             &.mid {
-                left: 33%;
+                left: 33.33%;
+                border-right: 2px solid rgba(0,0,0,0.50);
             }
 
             &.right {

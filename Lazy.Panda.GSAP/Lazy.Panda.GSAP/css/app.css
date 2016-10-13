@@ -1170,7 +1170,7 @@ body {
       height: 120px;
       line-height: 120px;
       padding: 0;
-      width: 33%;
+      width: 33.33%;
       text-align: center;
       font-weight: 100;
       font-size: xx-large;
@@ -1179,16 +1179,20 @@ body {
       border: none;
       background: transparent;
       transition: background 0.3s linear;
-      color: #fff; }
+      color: #fff;
+      background: rgba(0, 0, 0, 0.33);
+      box-sizing: border-box; }
       @media only screen and (max-width: 768px) {
         body .content .panda-action {
           height: 180px;
           line-height: 180px;
           font-size: medium; } }
       body .content .panda-action.left {
-        left: 0; }
+        left: 0;
+        border-right: 2px solid rgba(0, 0, 0, 0.5); }
       body .content .panda-action.mid {
-        left: 33%; }
+        left: 33.33%;
+        border-right: 2px solid rgba(0, 0, 0, 0.5); }
       body .content .panda-action.right {
         right: 0; }
       body .content .panda-action:hover, body .content .panda-action:active {
