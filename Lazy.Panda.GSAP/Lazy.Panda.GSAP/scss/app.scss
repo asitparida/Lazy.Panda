@@ -66,6 +66,11 @@ html {
                 fill: lighten($defcolor, 10%);
                 transition: fill 0.3s linear 0s;
             }
+
+            &-cap {
+                fill: lighten($defcolor, 10%);
+                transition: fill 0.3s linear 0s;
+            }
         }
     }
 }
@@ -433,10 +438,10 @@ body {
             bottom: 0;
             z-index: 999;
             font-family: 'Open Sans', sans-serif;
-            height: 72px;
-            line-height: 72px;
-            padding: 0 30px;
-            width: 49%;
+            height: 120px;
+            line-height: 120px;
+            padding: 0;
+            width: 33%;
             text-align: center;
             font-weight: 100;
             font-size: xx-large;
@@ -449,6 +454,10 @@ body {
 
             &.left {
                 left: 0;
+            }
+
+            &.mid {
+                left: 33%;
             }
 
             &.right {
@@ -473,33 +482,55 @@ body {
             &-pictrect {
                 stroke-miterlimit: 10;
                 stroke-width: 5px;
+                stroke: #000;
             }
 
-            .cls-2, .cls-7 {
+            &-cap {
                 stroke: #000;
+                stroke-miterlimit: 10;
+                stroke-width: 5px;
+            }
+
+            .cls-10, .cls-4, .cls-8, .cls-9 {
+                stroke: #000;
+            }
+
+            .cls-4, .cls-8, .cls-9 {
+                stroke-miterlimit: 10;
+            }
+
+            .cls-4 {
+                stroke-width: 5px;
             }
 
             .cls-3 {
                 fill: #333;
             }
 
-            .cls-4 {
-                fill: gray;
+            .cls-10, .cls-4, .cls-8 {
+                fill: none;
             }
 
             .cls-5 {
+                fill: gray;
+            }
+
+            .cls-6 {
                 fill: #f0f0f0;
             }
 
-            .cls-6, .cls-8 {
+            .cls-7 {
                 fill: #fff;
             }
 
-            .cls-7 {
-                fill: none;
+            .cls-8 {
+                stroke-width: 8px;
+            }
+
+            .cls-10 {
                 stroke-linecap: round;
                 stroke-linejoin: round;
-                stroke-width: 8px;
+                stroke-width: 7px;
             }
         }
     }

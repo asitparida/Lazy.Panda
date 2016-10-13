@@ -71,24 +71,92 @@
 
     self.lipRight = document.getElementById('panda-lip-right');
     self.lipLeft = document.getElementById('panda-lip-left');
+    self.eyeRight = document.getElementById('panda-eye-right');
+    self.eyeLeft = document.getElementById('panda-eye-left');
+    self.mustacheRight = document.getElementById('panda-mustache-right');
+    self.mustacheLeft = document.getElementById('panda-mustache-left');
+    self.cap = document.getElementById('panda-cap');
+    self.pictRect = document.getElementById('panda-pictrect');
+    self.nose = document.getElementById('panda-nose');
+
+    self.pandaHappy = false;
+    self.pandaSad = false;
+    self.pandaKungFu = false;
+
+    TweenMax.set(self.cap, { scaleY: 0, scaleX: 0, transformOrigin: "center" });
+    TweenMax.set(".panda-cap-lines", { opacity: 0 });
+    TweenMax.set([self.mustacheRight, self.mustacheLeft], { opacity: 0 });
 
     self.makePandaHappy = function () {
-        TweenMax.set(self.lipRight, { y: 0, x: 3 });
-        TweenMax.set(self.lipLeft, { y: 20, x: 40 });
-        self.timeline = new TimelineLite({});
-        self.timeline
-        .to(self.lipRight, 1, { rotation: -30, transformOrigin: "left top" })
-        .to(self.lipLeft, 1, { rotation: 30, transformOrigin: "right top" }, "-=1");
+        if (self.pandaKungFu == true) {
+            self.pandaReset();
+            $timeout(self.makePandaHappy, 1000);
+        }
+        else {
+            TweenMax.set([self.mustacheRight, self.mustacheLeft], { opacity: 0 });
+            self.timeline = new TimelineLite({});
+            self.timeline
+            .to(self.lipRight, 1, { rotation: -30, transformOrigin: "left top", })
+            .to(self.lipLeft, 1, { rotation: 30, transformOrigin: "right top" }, "-=1")
+            .to([self.eyeLeft, self.eyeRight], 1, { scaleY: 1.10, transformOrigin: "center" },"-=0.50")
+            self.pandaHappy = true;
+        }
     }
 
     self.makePandaSad = function () {
-        TweenMax.set(self.lipRight, { y: -1, x: 1 });
-        TweenMax.set(self.lipLeft, { y: 18, x: 40 });
-        self.timeline = new TimelineLite({});
-        self.timeline
-        .to(self.lipRight, 1, { rotation: 30, transformOrigin: "left top" })
-        .to(self.lipLeft, 1, { rotation: -30, transformOrigin: "right top" }, "-=1");
+        if (self.pandaKungFu == true) {
+            self.pandaReset();
+            $timeout(self.makePandaSad, 1000);
+        }
+        else {
+            TweenMax.to([self.eyeLeft, self.eyeRight], 0.33, { scaleY: 1, transformOrigin: "center" });
+            TweenMax.set([self.mustacheRight, self.mustacheLeft], { opacity: 0 });
+            self.timeline = new TimelineLite({});
+            self.timeline
+            .to(self.lipRight, 1, { rotation: 30, transformOrigin: "left top" })
+            .to(self.lipLeft, 1, { rotation: -30, transformOrigin: "right top" }, "-=1");
+            self.pandaSad = true;
+        }
     }
 
+    self.makePandaKungFu = function () {
+        if (self.pandaKungFu == true || self.pandaHappy == true || self.pandaSad == true) {
+            self.pandaReset();
+            $timeout(self.makePandaKungFu, 1000);
+        }
+        else {
+            self.timeline = new TimelineLite({});
+            TweenMax.set(self.cap, { scaleY: 0, scaleX: 0, transformOrigin: "center" });
+            TweenMax.set(".panda-cap-lines", { opacity: 0 });
+            TweenMax.set(self.lipRight, { rotation: 0 });
+            TweenMax.set(self.lipLeft, { rotation: 0 });
+            TweenMax.set(".panda-cap-lines", { y: 60 });
+            TweenMax.set([self.mustacheRight, self.mustacheLeft], { opacity: 1 });
+            self.timeline
+            .to(self.eyeLeft, 1, { scaleY: 0.40, transformOrigin: "center", ease: Power1.easeOut })
+            .to(self.eyeRight, 1, { scaleY: 0.40, transformOrigin: "center", ease: Power1.easeOut }, "-=1")
+            .to(self.mustacheRight, 1, { rotation: -90, transformOrigin: "right top", ease: Elastic.easeOut.config(2, 0.3) }, "-=1")
+            .to(self.mustacheLeft, 1, { rotation: 90, transformOrigin: "left top", ease: Elastic.easeOut.config(2, 0.3) }, "-=1")
+            .to(self.mustacheRight, 0.50, { scaleX: 0.50, scaleY: 0.50, }, "-=1")
+            .to(self.mustacheLeft, 0.50, { scaleX: 0.50, scaleY: 0.50 }, "-=1")            
+            .to(self.pictRect, 0.50, { scaleY: 0, transformOrigin: "center top", opacity: 0 }, "-=0.50")
+            .to(self.cap, 0.50, { scaleY: 1, transformOrigin: "center", y: 60 }, "-=1.75")
+            .to(self.cap, 0.50, { scaleX: 1, transformOrigin: "center" }, "-=0.50")
+            .to(".panda-cap-lines", 0.50, { opacity: 1 }, "-=0.25");
+            self.pandaKungFu = true;
+        }
+    }
+
+    self.pandaReset = function () {
+        TweenMax.to(".panda-cap-lines", 0.25, { opacity: 0 });
+        TweenMax.to(self.cap, 0.25, { scaleY: 0, scaleX: 0, transformOrigin: "center" }).delay(0.25);
+        TweenMax.to([self.eyeLeft, self.eyeRight], 1, { scaleY: 1, transformOrigin: "center" }, "-=0.50").delay(0.25);
+        self.pandaKungFu = false;
+        self.pandaHappy = false;
+        self.pandaSad = false;
+        if (self.timeline)
+            self.timeline.reverse();
+    }
+    $timeout(self.makePandaSad, 500);
 
 }]);
