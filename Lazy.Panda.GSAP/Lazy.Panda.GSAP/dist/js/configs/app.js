@@ -130,7 +130,7 @@
             TweenMax.set(".panda-cap-lines", { opacity: 0 });
             TweenMax.set(self.lipRight, { rotation: 0 });
             TweenMax.set(self.lipLeft, { rotation: 0 });
-            TweenMax.set(".panda-cap-lines", { y: 60 });
+            TweenMax.set(".panda-cap-lines", { y: 120 });
             TweenMax.set([self.mustacheRight, self.mustacheLeft], { opacity: 1 });
             self.timeline
             .to(self.eyeLeft, 1, { scaleY: 0.40, transformOrigin: "center", ease: Power1.easeOut })
@@ -140,7 +140,7 @@
             .to(self.mustacheRight, 0.50, { scaleX: 0.50, scaleY: 0.50, }, "-=1")
             .to(self.mustacheLeft, 0.50, { scaleX: 0.50, scaleY: 0.50 }, "-=1")            
             .to(self.pictRect, 0.50, { scaleY: 0, transformOrigin: "center top", opacity: 0 }, "-=0.50")
-            .to(self.cap, 0.50, { scaleY: 1, transformOrigin: "center", y: 60 }, "-=1.75")
+            .to(self.cap, 0.50, { scaleY: 1, transformOrigin: "center", y: 120 }, "-=1.75")
             .to(self.cap, 0.50, { scaleX: 1, transformOrigin: "center" }, "-=0.50")
             .to(".panda-cap-lines", 0.50, { opacity: 1 }, "-=0.25");
             self.pandaKungFu = true;
