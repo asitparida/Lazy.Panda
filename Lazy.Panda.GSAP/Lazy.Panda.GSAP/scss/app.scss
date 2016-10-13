@@ -68,7 +68,7 @@ html {
             }
 
             &-cap {
-                fill: lighten($defcolor, 10%);
+                fill: darken($defcolor, 10%);
                 transition: fill 0.3s linear 0s;
             }
         }
