@@ -1,0 +1,409 @@
+{
+    "name": "Akamai HD",
+    "children": [
+        {
+            "name": "ID",
+            "children": [
+                {
+                    "name": "GENERALID",
+                    "children": [
+                        {
+                            "name": "AD_TRACKING",
+                            "value": 20
+                        },
+                        {
+                            "name": "ANALYTIC_TRACKING",
+                            "value": 20
+                        },
+                        {
+                            "name": "SIGNOUT_PERSONALIZATION",
+                            "value": 20
+                        },
+                        {
+                            "name": "ANTI_FRAUD",
+                            "value": 20
+                        },
+                        {
+                            "name": "AUTHENTICATION",
+                            "value": 20
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Phone",
+            "children": [
+                {
+                    "name": "Battery",
+                    "children": [
+                        {
+                            "name": "BATTERY_EVENT",
+                            "value": 20
+                        },
+                        {
+                            "name": "POWER_MANAGEMENT",
+                            "value": 20
+                        },
+                        {
+                            "name": "ANALYTIC_DATA",
+                            "value": 20
+                        }
+                    ]
+                },
+                {
+                    "name": "Device",
+                    "children": [
+                        {
+                            "name": "INTERFACE_CUSTOMIZATION",
+                            "value": 20
+                        },
+                        {
+                            "name": "AD_DATA",
+                            "value": 20
+                        },
+                        {
+                            "name": "ANALYTIC_DATA",
+                            "value": 20
+                        }
+                    ]
+                },
+                {
+                    "name": "Network",
+                    "children": [
+                        {
+                            "name": "NETWORK_NOTIFICATION",
+                            "value": 20
+                        },
+                        {
+                            "name": "NETWORK_OPTIMIZATION",
+                            "value": 20
+                        },
+                        {
+                            "name": "GEO_LOCALIZATION",
+                            "value": 20
+                        },
+                        {
+                            "name": "AD_DATA",
+                            "value": 20
+                        },
+                        {
+                            "name": "ANALYTIC_DATA",
+                            "value": 20
+                        }
+                    ]
+                },
+                {
+                    "name": "PhoneState",
+                    "children": [
+                        {
+                            "name": "CROSSAPP_INFO",
+                            "value": 20
+                        },
+                        {
+                            "name": "TASK_MANAGEMENT",
+                            "value": 20
+                        }
+                    ]
+                },
+                {
+                    "name": "Notifications",
+                    "children": [
+                        {
+                            "name": "INTERFACE_CUSTOMIZATION",
+                            "value": 20
+                        },
+                        {
+                            "name": "INTERRUPTION_MANAGEMENT",
+                            "value": 20
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Personal",
+            "children": [
+                {
+                    "name": "Contacts",
+                    "children": [
+                        {
+                            "name": "BACKUP_SYNC",
+                            "value": 20
+                        },
+                        {
+                            "name": "CONTACT_MANAGE",
+                            "value": 20
+                        },
+                        {
+                            "name": "BLACKLIST",
+                            "value": 20
+                        },
+                        {
+                            "name": "CALL SMS",
+                            "value": 20
+                        },
+                        {
+                            "name": "CONTACT_CUSTOMIZATION",
+                            "value": 20
+                        },
+                        {
+                            "name": "EMAIL",
+                            "value": 20
+                        },
+                        {
+                            "name": "FIND_FRIENDS",
+                            "value": 20
+                        },
+                        {
+                            "name": "RECROD",
+                            "value": 20
+                        },
+                        {
+                            "name": "FAKE_CALL",
+                            "value": 20
+                        }
+                    ]
+                },
+                {
+                    "name": "Calendar",
+                    "children": [
+                        {
+                            "name": "CONTEXT_PREDICT",
+                            "value": 20
+                        },
+                        {
+                            "name": "SCHEDULE",
+                            "value": 20
+                        },
+                        {
+                            "name": "ALARM",
+                            "value": 20
+                        }
+                    ]
+                },
+                {
+                    "name": "SMS",
+                    "children": [
+                        {
+                            "name": "SEND_SMS",
+                            "value": 20
+                        },
+                        {
+                            "name": "ORG_SMS",
+                            "value": 20
+                        },
+                        {
+                            "name": "EXTRACT_SMS",
+                            "value": 20
+                        },
+                        {
+                            "name": "BLOCK_SMS",
+                            "value": 20
+                        },
+                        {
+                            "name": "SCHEDULE_SMS",
+                            "value": 20
+                        },
+                        {
+                            "name": "BACKUP_SYNC",
+                            "value": 20
+                        }
+                    ]
+                },
+                {
+                    "name": "Storage",
+                    "children": [
+                        {
+                            "name": "PHOTO_EDIT",
+                            "value": 20
+                        },
+                        {
+                            "name": "MANAGE_DOWNLOAD",
+                            "value": 20
+                        },
+                        {
+                            "name": "PERSISTENT_STORAGE",
+                            "value": 20
+                        }
+                    ]
+                },
+                {
+                    "name": "Account",
+                    "children": [
+                        {
+                            "name": "THIRDPARTY_LOGIN",
+                            "value": 20
+                        },
+                        {
+                            "name": "AD_DATA",
+                            "value": 20
+                        },
+                        {
+                            "name": "ANALYTIC_DATA",
+                            "value": 20
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sensor",
+            "children": [
+                {
+                    "name": "Camera",
+                    "children": [
+                        {
+                            "name": "FLASHLIGHT",
+                            "value": 20
+                        },
+                        {
+                            "name": "VIDEO_STREAMING",
+                            "value": 20
+                        },
+                        {
+                            "name": "CODE_SCANNING",
+                            "value": 20
+                        },
+                        {
+                            "name": "DOCUMENT_SCANNING",
+                            "value": 20
+                        },
+                        {
+                            "name": "AUGMENT REALITY",
+                            "value": 20
+                        },
+                        {
+                            "name": "TEXT_RECOGNITION",
+                            "value": 20
+                        },
+                        {
+                            "name": "PHOTO_TAKING",
+                            "value": 20
+                        }
+                    ]
+                },
+                {
+                    "name": "Location",
+                    "children": [
+                        {
+                            "name": "NEARBY_SEARCH",
+                            "value": 20
+                        },
+                        {
+                            "name": "LOCATION_BASED_CUSTOMIZATION",
+                            "value": 20
+                        },
+                        {
+                            "name": "TRANSPORTATION_INFO",
+                            "value": 20
+                        },
+                        {
+                            "name": "RECRODING",
+                            "value": 20
+                        },
+                        {
+                            "name": "MAP_NAVIGATION",
+                            "value": 20
+                        },
+                        {
+                            "name": "GEOSOCIAL_NETWORK",
+                            "value": 20
+                        },
+                        {
+                            "name": "GEOTAGGING",
+                            "value": 20
+                        },
+                        {
+                            "name": "LOCATION_SPOOFING",
+                            "value": 20
+                        },
+                        {
+                            "name": "ALERT_REMIND",
+                            "value": 20
+                        },
+                        {
+                            "name": "LOCATION_BASED_GAME",
+                            "value": 20
+                        },
+                        {
+                            "name": "REVERSE_GEOCODING",
+                            "value": 20
+                        },
+                        {
+                            "name": "AD_DATA",
+                            "value": 20
+                        },
+                        {
+                            "name": "ANALYTIC_DATA",
+                            "value": 20
+                        }
+                    ]
+                },
+                {
+                    "name": "Microphone",
+                    "children": [
+                        {
+                            "name": "VOICE_AUTHEN",
+                            "value": 20
+                        },
+                        {
+                            "name": "AUDIEO_STREAMING",
+                            "value": 20
+                        },
+                        {
+                            "name": "VOICE_CONTROL",
+                            "value": 20
+                        },
+                        {
+                            "name": "SPEECH_REC",
+                            "value": 20
+                        },
+                        {
+                            "name": "AUDIO_RECORD",
+                            "value": 20
+                        },
+                        {
+                            "name": "ACOUSTIC_EVENT_DETECT",
+                            "value": 20
+                        },
+                        {
+                            "name": "ACOUSTIC_COMMUNICATION",
+                            "value": 20
+                        },
+                        {
+                            "name": "MUSIC",
+                            "value": 20
+                        }
+                    ]
+                },
+                {
+                    "name": "Accelerator",
+                    "children": [
+                        {
+                            "name": "Step-counter",
+                            "value": 20
+                        },
+                        {
+                            "name": "GAME_CONTROLLER",
+                            "value": 20
+                        },
+                        {
+                            "name": "MAP_NAVIGATION",
+                            "value": 20
+                        }
+                    ]
+                },
+                {
+                    "name": "Proximity",
+                    "children": [
+                        {
+                            "name": "SPEAKER_ACTIVATION",
+                            "value": 20
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
