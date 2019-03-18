@@ -1,1 +1,409 @@
-{"name":"Akamai HD","children":[{"name":"ID","children":[{"name":"GENERALID","children":[{"name":"Regarding ad tracking","value":0},{"name":"Due to analytic tracking","value":30},{"name":"Due to signout personalization","value":40},{"name":"For anti fraud","value":0},{"name":"Due to authentication","value":88}]}]},{"name":"Phone","children":[{"name":"Battery","children":[{"name":"Regarding battery event","value":6},{"name":"For power management","value":0},{"name":"Due to analytic data","value":41}]},{"name":"Device","children":[{"name":"For interface customization","value":0},{"name":"Regarding ad data","value":41},{"name":"Regarding analytic data","value":10}]},{"name":"Network","children":[{"name":"Due to network notification","value":25},{"name":"For network optimization","value":0},{"name":"Regarding geo localization","value":22},{"name":"Due to ad data","value":21},{"name":"For analytic data","value":0}]},{"name":"PhoneState","children":[{"name":"Regarding crossapp info","value":0},{"name":"Due to task management","value":26}]},{"name":"Notifications","children":[{"name":"Regarding interface customization","value":0},{"name":"Regarding interruption management","value":0}]}]},{"name":"Personal","children":[{"name":"Contacts","children":[{"name":"Regarding backup sync","value":17},{"name":"For contact manage","value":21},{"name":"Due to blacklist","value":98},{"name":"Due to call sms","value":0},{"name":"Regarding contact customization","value":25},{"name":"Regarding email","value":0},{"name":"Due to find friends","value":0},{"name":"Due to recrod","value":17},{"name":"For fake call","value":0}]},{"name":"Calendar","children":[{"name":"Due to context predict","value":77},{"name":"Regarding schedule","value":22},{"name":"For alarm","value":63}]},{"name":"SMS","children":[{"name":"For send sms","value":0},{"name":"Regarding org sms","value":0},{"name":"Due to extract sms","value":0},{"name":"Due to block sms","value":0},{"name":"Regarding schedule sms","value":2},{"name":"Regarding backup sync","value":19}]},{"name":"Storage","children":[{"name":"For photo edit","value":0},{"name":"Due to manage download","value":0},{"name":"For persistent storage","value":0}]},{"name":"Account","children":[{"name":"Due to thirdparty login","value":34},{"name":"For ad data","value":0},{"name":"Regarding analytic data","value":0}]}]},{"name":"Sensor","children":[{"name":"Camera","children":[{"name":"Regarding flashlight","value":16},{"name":"Due to video streaming","value":0},{"name":"For code scanning","value":0},{"name":"Due to document scanning","value":0},{"name":"For augment reality","value":93},{"name":"For text recognition","value":30},{"name":"Due to photo taking","value":0}]},{"name":"Location","children":[{"name":"Regarding nearby search","value":30},{"name":"For location based customization","value":12},{"name":"Due to transportation info","value":0},{"name":"Regarding recroding","value":0},{"name":"For map navigation","value":0},{"name":"Regarding geosocial network","value":89},{"name":"For geotagging","value":0},{"name":"For location spoofing","value":0},{"name":"Due to alert remind","value":33},{"name":"For location based game","value":0},{"name":"For reverse geocoding","value":75},{"name":"Due to ad data","value":0},{"name":"Due to analytic data","value":45}]},{"name":"Microphone","children":[{"name":"Regarding voice authen","value":77},{"name":"Due to audieo streaming","value":0},{"name":"Due to voice control","value":95},{"name":"Regarding speech rec","value":90},{"name":"For audio record","value":0},{"name":"Due to acoustic event detect","value":0},{"name":"Regarding acoustic communication","value":0},{"name":"Due to music","value":0}]},{"name":"Accelerator","children":[{"name":"Due to step-counter","value":0},{"name":"Due to game controller","value":58},{"name":"Regarding map navigation","value":78}]},{"name":"Proximity","children":[{"name":"Due to speaker activation","value":99}]}]}]}
+{
+    "name": "Akamai HD",
+    "children": [
+        {
+            "name": "ID",
+            "children": [
+                {
+                    "name": "GENERALID",
+                    "children": [
+                        {
+                            "name": "Regarding ad tracking",
+                            "value": 0
+                        },
+                        {
+                            "name": "Due to analytic tracking",
+                            "value": 30
+                        },
+                        {
+                            "name": "Due to signout personalization",
+                            "value": 40
+                        },
+                        {
+                            "name": "For anti fraud",
+                            "value": 0
+                        },
+                        {
+                            "name": "Due to authentication",
+                            "value": 88
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Phone",
+            "children": [
+                {
+                    "name": "Battery",
+                    "children": [
+                        {
+                            "name": "Regarding battery event",
+                            "value": 6
+                        },
+                        {
+                            "name": "For power management",
+                            "value": 0
+                        },
+                        {
+                            "name": "Due to analytic data",
+                            "value": 41
+                        }
+                    ]
+                },
+                {
+                    "name": "Device",
+                    "children": [
+                        {
+                            "name": "For interface customization",
+                            "value": 0
+                        },
+                        {
+                            "name": "Regarding ad data",
+                            "value": 41
+                        },
+                        {
+                            "name": "Regarding analytic data",
+                            "value": 10
+                        }
+                    ]
+                },
+                {
+                    "name": "Network",
+                    "children": [
+                        {
+                            "name": "Due to network notification",
+                            "value": 25
+                        },
+                        {
+                            "name": "For network optimization",
+                            "value": 0
+                        },
+                        {
+                            "name": "Regarding geo localization",
+                            "value": 22
+                        },
+                        {
+                            "name": "Due to ad data",
+                            "value": 21
+                        },
+                        {
+                            "name": "For analytic data",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "PhoneState",
+                    "children": [
+                        {
+                            "name": "Regarding crossapp info",
+                            "value": 0
+                        },
+                        {
+                            "name": "Due to task management",
+                            "value": 26
+                        }
+                    ]
+                },
+                {
+                    "name": "Notifications",
+                    "children": [
+                        {
+                            "name": "Regarding interface customization",
+                            "value": 0
+                        },
+                        {
+                            "name": "Regarding interruption management",
+                            "value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Personal",
+            "children": [
+                {
+                    "name": "Contacts",
+                    "children": [
+                        {
+                            "name": "Regarding backup sync",
+                            "value": 17
+                        },
+                        {
+                            "name": "For contact manage",
+                            "value": 21
+                        },
+                        {
+                            "name": "Due to blacklist",
+                            "value": 98
+                        },
+                        {
+                            "name": "Due to call sms",
+                            "value": 0
+                        },
+                        {
+                            "name": "Regarding contact customization",
+                            "value": 25
+                        },
+                        {
+                            "name": "Regarding email",
+                            "value": 0
+                        },
+                        {
+                            "name": "Due to find friends",
+                            "value": 0
+                        },
+                        {
+                            "name": "Due to recrod",
+                            "value": 17
+                        },
+                        {
+                            "name": "For fake call",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "Calendar",
+                    "children": [
+                        {
+                            "name": "Due to context predict",
+                            "value": 77
+                        },
+                        {
+                            "name": "Regarding schedule",
+                            "value": 22
+                        },
+                        {
+                            "name": "For alarm",
+                            "value": 63
+                        }
+                    ]
+                },
+                {
+                    "name": "SMS",
+                    "children": [
+                        {
+                            "name": "For send sms",
+                            "value": 0
+                        },
+                        {
+                            "name": "Regarding org sms",
+                            "value": 0
+                        },
+                        {
+                            "name": "Due to extract sms",
+                            "value": 0
+                        },
+                        {
+                            "name": "Due to block sms",
+                            "value": 0
+                        },
+                        {
+                            "name": "Regarding schedule sms",
+                            "value": 2
+                        },
+                        {
+                            "name": "Regarding backup sync",
+                            "value": 19
+                        }
+                    ]
+                },
+                {
+                    "name": "Storage",
+                    "children": [
+                        {
+                            "name": "For photo edit",
+                            "value": 0
+                        },
+                        {
+                            "name": "Due to manage download",
+                            "value": 0
+                        },
+                        {
+                            "name": "For persistent storage",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "Account",
+                    "children": [
+                        {
+                            "name": "Due to thirdparty login",
+                            "value": 34
+                        },
+                        {
+                            "name": "For ad data",
+                            "value": 0
+                        },
+                        {
+                            "name": "Regarding analytic data",
+                            "value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sensor",
+            "children": [
+                {
+                    "name": "Camera",
+                    "children": [
+                        {
+                            "name": "Regarding flashlight",
+                            "value": 16
+                        },
+                        {
+                            "name": "Due to video streaming",
+                            "value": 0
+                        },
+                        {
+                            "name": "For code scanning",
+                            "value": 0
+                        },
+                        {
+                            "name": "Due to document scanning",
+                            "value": 0
+                        },
+                        {
+                            "name": "For augment reality",
+                            "value": 93
+                        },
+                        {
+                            "name": "For text recognition",
+                            "value": 30
+                        },
+                        {
+                            "name": "Due to photo taking",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "Location",
+                    "children": [
+                        {
+                            "name": "Regarding nearby search",
+                            "value": 30
+                        },
+                        {
+                            "name": "For location based customization",
+                            "value": 12
+                        },
+                        {
+                            "name": "Due to transportation info",
+                            "value": 0
+                        },
+                        {
+                            "name": "Regarding recroding",
+                            "value": 0
+                        },
+                        {
+                            "name": "For map navigation",
+                            "value": 0
+                        },
+                        {
+                            "name": "Regarding geosocial network",
+                            "value": 89
+                        },
+                        {
+                            "name": "For geotagging",
+                            "value": 0
+                        },
+                        {
+                            "name": "For location spoofing",
+                            "value": 0
+                        },
+                        {
+                            "name": "Due to alert remind",
+                            "value": 33
+                        },
+                        {
+                            "name": "For location based game",
+                            "value": 0
+                        },
+                        {
+                            "name": "For reverse geocoding",
+                            "value": 75
+                        },
+                        {
+                            "name": "Due to ad data",
+                            "value": 0
+                        },
+                        {
+                            "name": "Due to analytic data",
+                            "value": 45
+                        }
+                    ]
+                },
+                {
+                    "name": "Microphone",
+                    "children": [
+                        {
+                            "name": "Regarding voice authen",
+                            "value": 77
+                        },
+                        {
+                            "name": "Due to audieo streaming",
+                            "value": 0
+                        },
+                        {
+                            "name": "Due to voice control",
+                            "value": 95
+                        },
+                        {
+                            "name": "Regarding speech rec",
+                            "value": 90
+                        },
+                        {
+                            "name": "For audio record",
+                            "value": 0
+                        },
+                        {
+                            "name": "Due to acoustic event detect",
+                            "value": 0
+                        },
+                        {
+                            "name": "Regarding acoustic communication",
+                            "value": 0
+                        },
+                        {
+                            "name": "Due to music",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "name": "Accelerator",
+                    "children": [
+                        {
+                            "name": "Due to step-counter",
+                            "value": 0
+                        },
+                        {
+                            "name": "Due to game controller",
+                            "value": 58
+                        },
+                        {
+                            "name": "Regarding map navigation",
+                            "value": 78
+                        }
+                    ]
+                },
+                {
+                    "name": "Proximity",
+                    "children": [
+                        {
+                            "name": "Due to speaker activation",
+                            "value": 99
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
