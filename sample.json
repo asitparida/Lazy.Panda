@@ -8,24 +8,24 @@
                     "name": "GENERALID",
                     "children": [
                         {
-                            "name": "AD_TRACKING",
-                            "value": 20
+                            "name": "Regarding ad tracking",
+                            "value": 18
                         },
                         {
-                            "name": "ANALYTIC_TRACKING",
-                            "value": 20
+                            "name": "For analytic tracking",
+                            "value": 43
                         },
                         {
-                            "name": "SIGNOUT_PERSONALIZATION",
-                            "value": 20
+                            "name": "Regarding signout personalization",
+                            "value": 92
                         },
                         {
-                            "name": "ANTI_FRAUD",
-                            "value": 20
+                            "name": "Regarding anti fraud",
+                            "value": 51
                         },
                         {
-                            "name": "AUTHENTICATION",
-                            "value": 20
+                            "name": "Regarding authentication",
+                            "value": 93
                         }
                     ]
                 }
@@ -38,16 +38,16 @@
                     "name": "Battery",
                     "children": [
                         {
-                            "name": "BATTERY_EVENT",
-                            "value": 20
+                            "name": "Regarding battery event",
+                            "value": 54
                         },
                         {
-                            "name": "POWER_MANAGEMENT",
-                            "value": 20
+                            "name": "Due to power management",
+                            "value": 10
                         },
                         {
-                            "name": "ANALYTIC_DATA",
-                            "value": 20
+                            "name": "Due to analytic data",
+                            "value": 21
                         }
                     ]
                 },
@@ -55,16 +55,16 @@
                     "name": "Device",
                     "children": [
                         {
-                            "name": "INTERFACE_CUSTOMIZATION",
-                            "value": 20
+                            "name": "Regarding interface customization",
+                            "value": 14
                         },
                         {
-                            "name": "AD_DATA",
-                            "value": 20
+                            "name": "Regarding ad data",
+                            "value": 21
                         },
                         {
-                            "name": "ANALYTIC_DATA",
-                            "value": 20
+                            "name": "Due to analytic data",
+                            "value": 41
                         }
                     ]
                 },
@@ -72,24 +72,24 @@
                     "name": "Network",
                     "children": [
                         {
-                            "name": "NETWORK_NOTIFICATION",
-                            "value": 20
+                            "name": "For network notification",
+                            "value": 48
                         },
                         {
-                            "name": "NETWORK_OPTIMIZATION",
-                            "value": 20
+                            "name": "Regarding network optimization",
+                            "value": 70
                         },
                         {
-                            "name": "GEO_LOCALIZATION",
-                            "value": 20
+                            "name": "Regarding geo localization",
+                            "value": 93
                         },
                         {
-                            "name": "AD_DATA",
-                            "value": 20
+                            "name": "For ad data",
+                            "value": 58
                         },
                         {
-                            "name": "ANALYTIC_DATA",
-                            "value": 20
+                            "name": "Regarding analytic data",
+                            "value": 12
                         }
                     ]
                 },
@@ -97,12 +97,12 @@
                     "name": "PhoneState",
                     "children": [
                         {
-                            "name": "CROSSAPP_INFO",
-                            "value": 20
+                            "name": "Due to crossapp info",
+                            "value": 15
                         },
                         {
-                            "name": "TASK_MANAGEMENT",
-                            "value": 20
+                            "name": "Due to task management",
+                            "value": 14
                         }
                     ]
                 },
@@ -110,12 +110,12 @@
                     "name": "Notifications",
                     "children": [
                         {
-                            "name": "INTERFACE_CUSTOMIZATION",
-                            "value": 20
+                            "name": "Regarding interface customization",
+                            "value": 70
                         },
                         {
-                            "name": "INTERRUPTION_MANAGEMENT",
-                            "value": 20
+                            "name": "Due to interruption management",
+                            "value": 55
                         }
                     ]
                 }
@@ -128,40 +128,40 @@
                     "name": "Contacts",
                     "children": [
                         {
-                            "name": "BACKUP_SYNC",
-                            "value": 20
+                            "name": "Regarding backup sync",
+                            "value": 35
                         },
                         {
-                            "name": "CONTACT_MANAGE",
-                            "value": 20
+                            "name": "Regarding contact manage",
+                            "value": 78
                         },
                         {
-                            "name": "BLACKLIST",
-                            "value": 20
+                            "name": "Regarding blacklist",
+                            "value": 72
                         },
                         {
-                            "name": "CALL SMS",
-                            "value": 20
+                            "name": "Regarding call sms",
+                            "value": 57
                         },
                         {
-                            "name": "CONTACT_CUSTOMIZATION",
-                            "value": 20
+                            "name": "Regarding contact customization",
+                            "value": 66
                         },
                         {
-                            "name": "EMAIL",
-                            "value": 20
+                            "name": "For email",
+                            "value": 4
                         },
                         {
-                            "name": "FIND_FRIENDS",
-                            "value": 20
+                            "name": "Due to find friends",
+                            "value": 57
                         },
                         {
-                            "name": "RECROD",
-                            "value": 20
+                            "name": "For recrod",
+                            "value": 33
                         },
                         {
-                            "name": "FAKE_CALL",
-                            "value": 20
+                            "name": "Due to fake call",
+                            "value": 88
                         }
                     ]
                 },
@@ -169,16 +169,16 @@
                     "name": "Calendar",
                     "children": [
                         {
-                            "name": "CONTEXT_PREDICT",
-                            "value": 20
+                            "name": "For context predict",
+                            "value": 39
                         },
                         {
-                            "name": "SCHEDULE",
-                            "value": 20
+                            "name": "Regarding schedule",
+                            "value": 91
                         },
                         {
-                            "name": "ALARM",
-                            "value": 20
+                            "name": "Due to alarm",
+                            "value": 61
                         }
                     ]
                 },
@@ -186,28 +186,28 @@
                     "name": "SMS",
                     "children": [
                         {
-                            "name": "SEND_SMS",
-                            "value": 20
+                            "name": "Due to send sms",
+                            "value": 36
                         },
                         {
-                            "name": "ORG_SMS",
-                            "value": 20
+                            "name": "Regarding org sms",
+                            "value": 67
                         },
                         {
-                            "name": "EXTRACT_SMS",
-                            "value": 20
+                            "name": "Regarding extract sms",
+                            "value": 73
                         },
                         {
-                            "name": "BLOCK_SMS",
-                            "value": 20
+                            "name": "Due to block sms",
+                            "value": 60
                         },
                         {
-                            "name": "SCHEDULE_SMS",
-                            "value": 20
+                            "name": "Regarding schedule sms",
+                            "value": 58
                         },
                         {
-                            "name": "BACKUP_SYNC",
-                            "value": 20
+                            "name": "Due to backup sync",
+                            "value": 13
                         }
                     ]
                 },
@@ -215,16 +215,16 @@
                     "name": "Storage",
                     "children": [
                         {
-                            "name": "PHOTO_EDIT",
-                            "value": 20
+                            "name": "Due to photo edit",
+                            "value": 13
                         },
                         {
-                            "name": "MANAGE_DOWNLOAD",
-                            "value": 20
+                            "name": "Due to manage download",
+                            "value": 35
                         },
                         {
-                            "name": "PERSISTENT_STORAGE",
-                            "value": 20
+                            "name": "Regarding persistent storage",
+                            "value": 33
                         }
                     ]
                 },
@@ -232,16 +232,16 @@
                     "name": "Account",
                     "children": [
                         {
-                            "name": "THIRDPARTY_LOGIN",
-                            "value": 20
+                            "name": "Due to thirdparty login",
+                            "value": 61
                         },
                         {
-                            "name": "AD_DATA",
-                            "value": 20
+                            "name": "For ad data",
+                            "value": 63
                         },
                         {
-                            "name": "ANALYTIC_DATA",
-                            "value": 20
+                            "name": "Regarding analytic data",
+                            "value": 8
                         }
                     ]
                 }
@@ -254,32 +254,32 @@
                     "name": "Camera",
                     "children": [
                         {
-                            "name": "FLASHLIGHT",
-                            "value": 20
+                            "name": "Regarding flashlight",
+                            "value": 46
                         },
                         {
-                            "name": "VIDEO_STREAMING",
-                            "value": 20
+                            "name": "For video streaming",
+                            "value": 50
                         },
                         {
-                            "name": "CODE_SCANNING",
-                            "value": 20
+                            "name": "For code scanning",
+                            "value": 73
                         },
                         {
-                            "name": "DOCUMENT_SCANNING",
-                            "value": 20
+                            "name": "For document scanning",
+                            "value": 75
                         },
                         {
-                            "name": "AUGMENT REALITY",
-                            "value": 20
+                            "name": "Due to augment reality",
+                            "value": 18
                         },
                         {
-                            "name": "TEXT_RECOGNITION",
-                            "value": 20
+                            "name": "Regarding text recognition",
+                            "value": 11
                         },
                         {
-                            "name": "PHOTO_TAKING",
-                            "value": 20
+                            "name": "Regarding photo taking",
+                            "value": 93
                         }
                     ]
                 },
@@ -287,56 +287,56 @@
                     "name": "Location",
                     "children": [
                         {
-                            "name": "NEARBY_SEARCH",
-                            "value": 20
+                            "name": "For nearby search",
+                            "value": 41
                         },
                         {
-                            "name": "LOCATION_BASED_CUSTOMIZATION",
-                            "value": 20
+                            "name": "Regarding location based customization",
+                            "value": 85
                         },
                         {
-                            "name": "TRANSPORTATION_INFO",
-                            "value": 20
+                            "name": "Due to transportation info",
+                            "value": 65
                         },
                         {
-                            "name": "RECRODING",
-                            "value": 20
+                            "name": "Due to recroding",
+                            "value": 3
                         },
                         {
-                            "name": "MAP_NAVIGATION",
-                            "value": 20
+                            "name": "Regarding map navigation",
+                            "value": 73
                         },
                         {
-                            "name": "GEOSOCIAL_NETWORK",
-                            "value": 20
+                            "name": "Regarding geosocial network",
+                            "value": 35
                         },
                         {
-                            "name": "GEOTAGGING",
-                            "value": 20
+                            "name": "Due to geotagging",
+                            "value": 14
                         },
                         {
-                            "name": "LOCATION_SPOOFING",
-                            "value": 20
+                            "name": "Due to location spoofing",
+                            "value": 98
                         },
                         {
-                            "name": "ALERT_REMIND",
-                            "value": 20
+                            "name": "For alert remind",
+                            "value": 8
                         },
                         {
-                            "name": "LOCATION_BASED_GAME",
-                            "value": 20
+                            "name": "Regarding location based game",
+                            "value": 85
                         },
                         {
-                            "name": "REVERSE_GEOCODING",
-                            "value": 20
+                            "name": "For reverse geocoding",
+                            "value": 41
                         },
                         {
-                            "name": "AD_DATA",
-                            "value": 20
+                            "name": "Regarding ad data",
+                            "value": 18
                         },
                         {
-                            "name": "ANALYTIC_DATA",
-                            "value": 20
+                            "name": "Regarding analytic data",
+                            "value": 10
                         }
                     ]
                 },
@@ -344,36 +344,36 @@
                     "name": "Microphone",
                     "children": [
                         {
-                            "name": "VOICE_AUTHEN",
+                            "name": "Due to voice authen",
+                            "value": 75
+                        },
+                        {
+                            "name": "For audieo streaming",
+                            "value": 65
+                        },
+                        {
+                            "name": "For voice control",
                             "value": 20
                         },
                         {
-                            "name": "AUDIEO_STREAMING",
-                            "value": 20
+                            "name": "Due to speech rec",
+                            "value": 32
                         },
                         {
-                            "name": "VOICE_CONTROL",
-                            "value": 20
+                            "name": "For audio record",
+                            "value": 70
                         },
                         {
-                            "name": "SPEECH_REC",
-                            "value": 20
+                            "name": "For acoustic event detect",
+                            "value": 16
                         },
                         {
-                            "name": "AUDIO_RECORD",
-                            "value": 20
+                            "name": "Due to acoustic communication",
+                            "value": 44
                         },
                         {
-                            "name": "ACOUSTIC_EVENT_DETECT",
-                            "value": 20
-                        },
-                        {
-                            "name": "ACOUSTIC_COMMUNICATION",
-                            "value": 20
-                        },
-                        {
-                            "name": "MUSIC",
-                            "value": 20
+                            "name": "Due to music",
+                            "value": 79
                         }
                     ]
                 },
@@ -381,16 +381,16 @@
                     "name": "Accelerator",
                     "children": [
                         {
-                            "name": "Step-counter",
-                            "value": 20
+                            "name": "For step-counter",
+                            "value": 43
                         },
                         {
-                            "name": "GAME_CONTROLLER",
-                            "value": 20
+                            "name": "Regarding game controller",
+                            "value": 62
                         },
                         {
-                            "name": "MAP_NAVIGATION",
-                            "value": 20
+                            "name": "For map navigation",
+                            "value": 34
                         }
                     ]
                 },
@@ -398,8 +398,8 @@
                     "name": "Proximity",
                     "children": [
                         {
-                            "name": "SPEAKER_ACTIVATION",
-                            "value": 20
+                            "name": "For speaker activation",
+                            "value": 92
                         }
                     ]
                 }
